@@ -1,4 +1,10 @@
 <?
+$PERM[".git"]["8"]="R";
+$PERM["/"]["8"]="W";
+$PERM["/"]["*"]="R";
+$PERM["bitrix"]["6"]="D";
+$PERM["bitrix"]["7"]="D";
+$PERM["bitrix"]["8"]="D";
 $PERM["personal_buyer"]["6"]="X";
 $PERM["personal_seller"]["*"]="D";
 $PERM["personal_seller"]["7"]="X";
@@ -7,5 +13,4 @@ $PERM["search"]["5"]="W";
 $PERM["products"]["5"]="W";
 $PERM["services"]["5"]="W";
 $PERM["index.php"]["5"]="W";
-$PERM["/"]["*"]="R";
 ?>
