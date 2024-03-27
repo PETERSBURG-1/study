@@ -1,5 +1,9 @@
 
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<? if ($APPLICATION->GetCurPage(false) !== '/'): ?>
+          </div>
+        </div>
+<? endif; ?>
 <?
 IncludeTemplateLangFile(__FILE__);
 ?>
