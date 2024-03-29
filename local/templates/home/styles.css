@@ -175,6 +175,15 @@ a:hover {
   .site-section {
     padding: 7em 0; }
 }
+
+@media (min-width: 768px) {
+  .site-section-spec {
+    padding-top: 0em;
+    padding-right: 0px;
+    padding-bottom: 7em;
+    padding-left: 0px; }
+}
+
 .site-section.site-section-sm {
   padding: 4em 0;
 }
