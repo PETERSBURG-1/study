@@ -166,6 +166,6 @@ use Bitrix\Main\Page\Asset;
         </div>
       </div>
     </div>
-    <div class="<?if (CSite::InDir('/ads/')):?>site-section-spec<?else :?>site-section<?endif;?> border-bottom<?if (!CSite::InDir('/ads/') && CSite::InDir('/ads/index.php') || CSite::InDir('/about/news/')):?> bg-light<?endif;?>">
-      <div class="<?if (CSite::InDir('/ads/') && !CSite::InDir('/ads/index.php')) :?><?else :?>container<?endif;?>">
+    <div class="<?if (CSite::InDir('/ads/') || CSite::InDir('/personal_seller/my_ads/')):?>site-section-spec<?else :?>site-section<?endif;?> border-bottom<?if (!CSite::InDir('/ads/') && CSite::InDir('/ads/index.php') || CSite::InDir('/about/news/')):?> bg-light<?endif;?>">
+      <div class="<?if (CSite::InDir('/ads/') && !CSite::InDir('/ads/index.php') || CSite::InDir('/personal_seller/my_ads/') && !CSite::InDir('/personal_seller/my_ads/index.php')) :?><?else :?>container<?endif;?>">
 <? endif; ?>

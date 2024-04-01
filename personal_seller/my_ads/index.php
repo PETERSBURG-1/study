@@ -1,6 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Мои объявления");
+global $USER;
+$GLOBALS["arrFilter"]  = array("CREATED_BY"=>intval($USER->GetID()));
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
 	"ads_section", 
@@ -29,8 +31,19 @@ $APPLICATION->SetTitle("Мои объявления");
 		"DETAIL_PAGER_TEMPLATE" => "",
 		"DETAIL_PAGER_TITLE" => "Страница",
 		"DETAIL_PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
+			0 => "YEAR_BUILT",
+			1 => "NUMBER_BATHROOMS",
+			2 => "NUMBER_FLOORS",
+			3 => "LOCATION",
+			4 => "PRECENCE_GARAGE",
+			5 => "TOTAL_AREA",
+			6 => "PRIORITY_DEAL",
+			7 => "LINKS_EXTERNAL",
+			8 => "HOME_TYPE",
+			9 => "PRICE",
+			10 => "IMAGE_GALLERY",
+			11 => "ADDITIONAL_MATERIALS",
+			12 => "",
 		),
 		"DETAIL_SET_CANONICAL_URL" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
@@ -39,15 +52,24 @@ $APPLICATION->SetTitle("Мои объявления");
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "5",
 		"IBLOCK_TYPE" => "content",
-		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"LIST_FIELD_CODE" => array(
 			0 => "",
 			1 => "",
 		),
 		"LIST_PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
+			0 => "YEAR_BUILT",
+			1 => "NUMBER_BATHROOMS",
+			2 => "NUMBER_FLOORS",
+			3 => "LOCATION",
+			4 => "PRECENCE_GARAGE",
+			5 => "TOTAL_AREA",
+			6 => "PRIORITY_DEAL",
+			7 => "LINKS_EXTERNAL",
+			8 => "HOME_TYPE",
+			9 => "PRICE",
+			10 => "",
 		),
 		"MESSAGE_404" => "",
 		"META_DESCRIPTION" => "-",
@@ -84,6 +106,17 @@ $APPLICATION->SetTitle("Мои объявления");
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"USE_SHARE" => "N",
+		"DISPLAY_TITLE" => "Y",
+		"FILTER_NAME" => "arrFilter",
+		"FILTER_FIELD_CODE" => array(
+			0 => "CREATED_BY",
+			1 => "",
+		),
+		"FILTER_PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"TITLE_CUSTOM" => "Мои объявления",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",

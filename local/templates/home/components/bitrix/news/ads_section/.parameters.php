@@ -28,6 +28,11 @@ $arTemplateParameters = array(
 		"DEFAULT" =>"N",
 		"REFRESH"=> "Y",
 	),
+	"TITLE_CUSTOM" => Array(
+		"NAME" => "Свой заголовок",
+		"TYPE" => "STRING",
+		"DEFAULT" => "",
+	),
 );
 
 if (($arCurrentValues['USE_SHARE'] ?? 'N') === 'Y')
@@ -77,4 +82,5 @@ if (($arCurrentValues['USE_SHARE'] ?? 'N') === 'Y')
 		"TYPE" => "STRING",
 		"DEFAULT" => "",
 	);
+
 }
