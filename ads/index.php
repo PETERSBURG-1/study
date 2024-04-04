@@ -74,7 +74,7 @@ $APPLICATION->SetTitle("Объявления");
 		"MESSAGE_404" => "",
 		"META_DESCRIPTION" => "-",
 		"META_KEYWORDS" => "-",
-		"NEWS_COUNT" => "6",
+		"NEWS_COUNT" => "1",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -103,6 +103,7 @@ $APPLICATION->SetTitle("Объявления");
 		"USE_SEARCH" => "N",
 		"USE_SHARE" => "N",
 		"COMPONENT_TEMPLATE" => "ads_section",
+		"TITLE_CUSTOM" => "",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "/ads/",
 			"section" => "#SECTION_CODE_PATH#/",

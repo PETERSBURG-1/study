@@ -38,7 +38,7 @@ if($arResult["OK_MESSAGE"] <> '')
 		</div>
 		<div class="row form-group">
          	<div class="col-md-12">
-		 		<label class="font-weight-bold" for="email"><?=GetMessage("SUBJECT")?><?if(empty($arParams["REQUIRED_FIELDS"]) || in_array("ENTER_SUBJECT", $arParams["REQUIRED_FIELDS"])):?><span class="mf-req">*</span><?endif?></label>
+		 		<label class="font-weight-bold" for="subject"><?=GetMessage("SUBJECT")?><?if(empty($arParams["REQUIRED_FIELDS"]) || in_array("ENTER_SUBJECT", $arParams["REQUIRED_FIELDS"])):?><span class="mf-req">*</span><?endif?></label>
 				<input type="text" id="subject" name="ENTER_SUBJECT" class="form-control" placeholder="<?=GetMessage("MFT_SUBJECT")?>">
 			</div>
 		</div>

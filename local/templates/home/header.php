@@ -98,9 +98,19 @@ use Bitrix\Main\Page\Asset;
                       "PATH" => "/include/soc_network.php"
                     )
                   );?>
+                   <?$APPLICATION->IncludeComponent("bitrix:system.auth.form", "auth_form", Array(
+        "FORGOT_PASSWORD_URL" => "/auth/",	// Страница забытого пароля
+          "PROFILE_URL" => "/auth/profile.php",	// Страница профиля
+          "REGISTER_URL" => "/auth/registration.php",	// Страница регистрации
+          "SHOW_ERRORS" => "Y",	// Показывать ошибки
+          "COMPONENT_TEMPLATE" => ".default"
+        ),
+        false
+      );?>
           </div>
         </div>
       </div>
+     
 
     </div>
     <div class="site-navbar">
