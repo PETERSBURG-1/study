@@ -96,6 +96,19 @@ $formatPrice = number_format($price, 0, ' ', ' ').$ruble;
               <h2 class="h4 text-black"><?=GetMessage('MORE_INFO')?></h2>
               <?=$arResult['DETAIL_TEXT']?>
 
+			  <div class="row mt-5">
+                <div class="col-12">
+                  <h2 class="h4 text-black mb-3"><?=$arResult["DISPLAY_PROPERTIES"]["IMAGE_GALLERY"]["NAME"]?></h2>
+                </div>
+                <?if($arResult["DISPLAY_PROPERTIES"]["IMAGE_GALLERY"]["VALUE"]):?>
+                  <?foreach($arResult["DISPLAY_PROPERTIES"]["IMAGE_GALLERY"]["VALUE"] as $photo):?>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                      <? $img = CFile::GetFileArray($photo); ?>
+                      <a href="<?=$img['SRC']?>" class="image-popup gal-item"><img src="<?=$img['SRC']?>" alt="Image" class="img-fluid" alt="<?=$arResult["NAME"]?>" title="<?=$arResult["NAME"]?>"></a>
+                    </div>
+                  <?endforeach;?>
+                <?endif;?>
+              </div>
               <div class="row mt-5">
                 <div class="col-12">
                   <h2 class="h4 text-black mb-3"><?=$arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["NAME"]?></h2>

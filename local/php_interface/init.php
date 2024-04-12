@@ -21,4 +21,10 @@ if (!(isset($_SESSION['NO_INIT']) && $_SESSION['NO_INIT'] == 'Y'))
 	if (file_exists($_SERVER["DOCUMENT_ROOT"]."/local/php_interface/include/event-registration.php"))
 		require_once($_SERVER["DOCUMENT_ROOT"]."/local/php_interface/include/event-registration.php");
 }
+
+{
+	if (file_exists($_SERVER["DOCUMENT_ROOT"]."/local/php_interface/include/reset-tagcache.php"))
+		require_once($_SERVER["DOCUMENT_ROOT"]."/local/php_interface/include/reset-tagcache.php");
+}
+
 ?>
