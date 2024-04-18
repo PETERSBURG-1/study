@@ -392,7 +392,7 @@ class AgentsList extends CBitrixComponent implements Controllerable, Errorable
             $value = $userProperty;
         } else {
             // 3. Если значение нет, то $agentID записать $value
-            $value = $agentID;
+            $value[] = $agentID;
         }
         // 4. Записать $value (результат) в бз, метод CUserOptions::SetOption
         // (его нет в документации, код метода и его параметры можно найти в ядре (/bitrix/modules/main/) или в гугле
