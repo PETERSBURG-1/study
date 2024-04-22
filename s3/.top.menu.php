@@ -1,0 +1,46 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Компания", 
+		"/s3/company/", 
+		Array(), 
+		Array("MENU_TEXT"=>"текст для пункта Компания"), 
+		"" 
+	),
+	Array(
+		"Новости", 
+		"/s3/news/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Продукция", 
+		"/s3/products/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Услуги", 
+		"/s3/services/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Партнерам", 
+		"/s3/partneram/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Отзывы", 
+		"/s3/rew/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

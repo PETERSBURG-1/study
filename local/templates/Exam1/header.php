@@ -34,7 +34,7 @@ use Bitrix\Main\Page\Asset;
                 <div class="main-phone-block">
                     <?
                     $ardate = getdate();
-                    if ($ardate['hours'] >= 9 && $ardate['hours'] <= 18):
+                    if ($ardate['hours'] > 9 && $ardate['hours'] < 18):
                     ?>
                     <a href="tel:84952128506" class="phone">8 (495) 212-85-06</a>
                     <?else:?>
