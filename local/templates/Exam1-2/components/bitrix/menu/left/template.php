@@ -12,7 +12,9 @@
 			<?if($arItem["SELECTED"]):?>
 				<li class="selected"><a href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a></li>
 			<?else:?>
+				<?if ($arItem["PERMISSION"] > "D"):?>
 				<li><a href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a></li>
+				<?endif?>
 			<?endif?>
 			
 		<?endforeach?>
