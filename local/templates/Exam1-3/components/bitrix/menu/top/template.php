@@ -23,6 +23,9 @@ foreach($arResult as $arItem):?>
 		<?else:?>
 			<li<?if ($arItem["SELECTED"]):?> class="item-selected"<?endif?>><a href="<?=$arItem["LINK"]?>" class="parent"><?=$arItem["TEXT"]?></a>
 				<ul>
+				<?if($arItem['PARAMS']['MENU_TEXT']):?>
+				<div class="menu-text"><?=$arItem['PARAMS']['MENU_TEXT']?></div>
+				<?endif?>
 		<?endif?>
 	<?else:?>
 

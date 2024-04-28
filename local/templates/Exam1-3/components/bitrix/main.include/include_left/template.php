@@ -12,8 +12,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
-
-if($arResult["FILE"] <> ''):?>
+if($arResult["FILE"] <> '' && filesize($arResult["FILE"]) != 0):?>
 <div class="side-block side-anonse">
 	<div class="title-block"><span class="i i-title01"></span>Полезная информация!</div>
 	<div class="item">
